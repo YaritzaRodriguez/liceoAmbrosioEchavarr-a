@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" type="image/x-icon" href="images/hit.ico">
+    <link rel="icon" type="image/x-icon" href="images/logoprepap.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-      /* Barra azul a lo largo */
+     /* Barra azul a lo largo */
       #ftco-navbar {
         background-color: #0b0e2e !important;
         width: 100%;
@@ -28,6 +28,7 @@
       #ftco-navbar .container {
         max-width: 1140px;
       }
+
       /* Encabezado superior */
       .top-header {
         background-color: white;
@@ -45,6 +46,35 @@
         height: 50px;
         margin-right: 10px;
       }
+
+      /* Forzar color azul del logo en utilidades y botones */
+      .btn-primary, .bg-primary, .bg-darken {
+        background-color: #2257A6 !important;
+        border-color: #2257A6  !important;
+        color: #fff !important;
+      }
+
+      /* Pie de página */
+      .ftco-footer {
+        background-color: #2257A6  !important;
+      }
+
+      /* Reglas para localizar y sobrescribir colores inline usados en el HTML original */
+      section[style*="#022e5d"],
+      footer[style*="#022e5d"] {
+        background-color: #2257A6  !important;
+      }
+
+      /* Ajustes FAQ */
+      .faq-question span {
+        color: #2257A6  !important;
+      }
+
+      /* Loader stroke */
+      .circular .path {
+        stroke: #2257A6 !important;
+      }
+
     </style>
   </head>
   <body>
@@ -53,9 +83,9 @@
     <div class="top-header">
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo-prepara.webp" alt="Logo"> Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
+          <img src="images/logoprepap.ico" alt="Logo"> Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
         </a>
-        <a href="#" class="btn btn-primary" style="background-color: orange; border: none;">Aplica Aquí</a>
+        <a href="#" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
       </div>
     </div>
 
@@ -95,12 +125,26 @@
         </div>
       </div>
     </nav>
+<style>
+/* Cambiar color azul principal */
+.bg-primary {
+    background-color: #2257A6 !important; /* Azul dodger */
+}
 
-  
-    
-    <section class="home-slider owl-carousel">
+/* Cambiar el otro fondo oscuro */
+.bg-darken {
+    background-color: #FFD700!important; /* Azul más oscuro */
+}
+
+/* Sombra negra difuminada sobre todas las imágenes */
+.overlay {
+    background: rgba(0, 0, 0, 0.4) !important; /* Negro 40% de opacidad */
+}
+</style>
+
+<section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image:url(images/bg_1.png);">
-      	<div class="overlay"></div>
+       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate">
@@ -112,22 +156,22 @@
       </div>
 
       <div class="slider-item" style="background-image:url(images/bg_2.png);">
-      	<div class="overlay"></div>
+       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate">
         </div>
         </div>
       </div>
-    </section>
+</section>
 
-    <section class="ftco-services ftco-no-pb">
-			<div class="container-wrap">
-				<div class="row no-gutters">
+<section class="ftco-services ftco-no-pb">
+	<div class="container-wrap">
+		<div class="row no-gutters">
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-teacher"></span>
+						<span class="flaticon-teacher"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Profesores Comprometidos</h3>
@@ -138,7 +182,7 @@
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-reading"></span>
+						<span class="flaticon-reading"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Orientación y Apoyo Estudiantil</h3>
@@ -149,7 +193,7 @@
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-books"></span>
+						<span class="flaticon-books"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Ambiente de aprendizaje seguro</h3>
@@ -160,7 +204,7 @@
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-diploma"></span>
+						<span class="flaticon-diploma"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Modalidad Sabatina</h3>
@@ -169,104 +213,65 @@
             </div>      
           </div>
         </div>
-			</div>
-		</section>
+	</div>
+</section>
 
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h3 class="mb-4">Nuestra Comunidad Educativa</h3>
-          </div>
+	
+	
+<style>
+  /* Sombreado de la sección ftco-counter cambiado al azul del logo */
+  .ftco-counter.img {
+    position: relative;
+  }
+  .ftco-counter.img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27, 19, 109, 0.5); /* Azul del logo con 50% de transparencia */
+    z-index: 0;
+  }
+  .ftco-counter.img .container {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.png);">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2 d-flex">
+      <div class="col-md-8 align-items-stretch d-flex">
+        <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
+          <h2 class="mb-5">Tour Virtual</h2>
+          <p>Conoce nuestras instalaciones.</p>
         </div>
-        <div class="row ftco-animate justify-content-center">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/teacher-1.jpg)">
-                  </div>
-                  <div class="text ml-2">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                    </span>
-                    <p> En nombre del Liceo Ambrosio, les doy la más cordial bienvenida a nuestra comunidad educativa.  
-    Aquí creemos en el poder de la educación para transformar vidas y formar ciudadanos responsables, críticos y comprometidos con su entorno. ¡Gracias por confiar en nosotros!</p>
-                    <p class="name">Deidamia Altagracia Martínez Payero</p>
-                    <span class="position">Directora</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/teacher-2.jpg)">
-                  </div>
-                  <div class="text ml-2">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      
-                    </span>
-                    <p>Desde que entré, me sentí bienvenida. Las clases son dinámicas y los docentes realmente se preocupan por nosotros.</p>
-                    <p class="name">Henry Dee</p>
-                    <span class="position">Estudiante</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-2" style="background-image: url(images/teacher-3.jpg)">
-                  </div>
-                  <div class="text ml-4">
-                  	<span class="quote d-flex align-items-center justify-content-center"> 
-                    </span>
-                    <p>Ser parte del Liceo Ambrosio ha sido una experiencia enriquecedora. Aquí me enseñan no solo contenidos, sino valores que me preparan para la vida</p>
-                    <p class="name">Mark Huff</p>
-                    <span class="position">Egresado</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>	
+      <div class="col-md topper d-flex align-items-center justify-content-end">
+        <p class="mb-0">
+          <a href="#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+            <span>Clíc Aquí</span>
+          </a>
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    	
-		
-		
-
-		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.png);" >
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-2 d-flex">
-    			<div class="col-md-8 align-items-stretch d-flex">
-         <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
-            <h2 class="mb-5">Tour Virtual</h2>
-            <p>Conoce nuestras instalaciones .</p>
-          </div>
-        </div>	
-         <div class="col-md topper d-flex align-items-center justify-content-end">
-					    	<p class="mb-0">
-					    		<a href="#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Clíc Aquí</span>
-					    		</a>
-					    	</p>
-					    </div>
-
-	          </div>
-          </div>
-        </div>
-    	</div>
-    </section>
 
 <section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
             <h2 class="mb-4"><span>Destacados</span> </h2>
           </div>
         </div>
-				<div class="row">
+			<div class="row">
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
               <a href="calendario.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image7.png');">
-								<div class="meta-date text-center p-2">
+						<div class="meta-date text-center p-2">
                  
                 </div>
               </a>
@@ -275,8 +280,8 @@
                 <p>Conoce las fechas importantes del centro educativo</p>
                 <div class="d-flex align-items-center mt-4">
               <a href="calendario.html" class="btn btn-sm btn-primary rounded-pill px-3">Leer Más</a>
-	                <p class="ml-auto mb-0">
-	                </p>
+				        <p class="ml-auto mb-0">
+				        </p>
                 </div>
               </div>
             </div>
@@ -284,7 +289,7 @@
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
               <a href="courses.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
-								<div class="meta-date text-center p-2">
+						<div class="meta-date text-center p-2">
               
                 </div>
               </a>
@@ -293,9 +298,9 @@
                 <p>Conoce todos los requisitos necesarios para inscribirte en el liceo Ambrosio Echavarría PREPARA</p>
                 <div class="d-flex align-items-center mt-4">
               <a href="evento5.html" class="btn btn-sm btn-primary rounded-pill px-3">Leer Más</a>
-	                <p class="ml-auto mb-0">
-	               
-	                </p>
+				        <p class="ml-auto mb-0">
+				       
+				        </p>
                 </div>
               </div>
             </div>
@@ -303,36 +308,36 @@
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
               <a href="evento2.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
-								<div class="meta-date text-center p-2">
+						<div class="meta-date text-center p-2">
                 </div>
               </a>
               <div class="text bg-white p-4">
                 <h3 class="heading"><a href="#">Nuevo Año Escolar</a></h3>
                 <p>Descrube todos las actividades</p>
                 <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                
-	                </p>
+				        <p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span class="ion-ios-arrow-round-forward"></span></a></p>
+				        <p class="ml-auto mb-0">
+				        
+				        </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-			</div>
-		</section>
+		</div>
+	</section>
      
-   <section style="background-color: #022e5d; padding: 80px 20px;">
+   <section style="background-color: rgb(27, 19, 109); padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 40px;">
 
-    <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 30px;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: rgb(27, 19, 109); margin-bottom: 30px;">
       Preguntas Frecuentes
     </h2>
 
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
-      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #2c3e50; cursor: pointer;">
+      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Cuáles son los requisitos de admisión?
-        <span style="float: right; color: #007BFF;">+</span>
+        <span style="float: right; color: rgb(27, 19, 109);">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Debes presentar tu acta de nacimiento, boletín de notas y completar el formulario de inscripción.
@@ -340,9 +345,9 @@
     </div>
 
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
-      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #2c3e50; cursor: pointer;">
+      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Cuál es el enfoque curricular de la escuela?
-        <span style="float: right; color: #007BFF;">+</span>
+        <span style="float: right; color: rgb(27, 19, 109);">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Nuestro currículo se centra en el desarrollo integral de los estudiantes, combinando lo académico con valores y habilidades prácticas.
@@ -350,9 +355,9 @@
     </div>
 
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
-      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #2c3e50; cursor: pointer;">
+      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Existen programas para estudiantes talentosos?
-        <span style="float: right; color: #007BFF;">+</span>
+        <span style="float: right; color: rgb(27, 19, 109);">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Sí, contamos con programas especiales de apoyo y desarrollo para estudiantes con talentos destacados en diversas áreas.
@@ -360,9 +365,9 @@
     </div>
 
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
-      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #2c3e50; cursor: pointer;">
+      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Qué actividades extracurriculares se ofrecen?
-        <span style="float: right; color: #007BFF;">+</span>
+        <span style="float: right; color: rgb(27, 19, 109);">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Ofrecemos deportes, arte, música, robótica, clubes de lectura y actividades comunitarias.
@@ -370,9 +375,9 @@
     </div>
 
     <div class="faq-item" style="padding: 20px 0;">
-      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #2c3e50; cursor: pointer;">
+      <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Qué medidas de seguridad existen en la escuela?
-        <span style="float: right; color: #007BFF;">+</span>
+        <span style="float: right; color: rgb(27, 19, 109);">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Contamos con vigilancia, control de acceso, simulacros de emergencia y personal capacitado en primeros auxilios.
@@ -461,16 +466,15 @@
     }
   </style>
 </section>
+
+
+
 	
 
-
 		
-
 		
-
 		
-    		
-   <footer class="ftco-footer" style="background-color: #022e5d;">
+		<footer class="ftco-footer" style="background-color: rgb(27, 19, 109);">
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-6 col-lg-3">
@@ -546,7 +550,7 @@
   
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="rgb(27, 19, 109)"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>

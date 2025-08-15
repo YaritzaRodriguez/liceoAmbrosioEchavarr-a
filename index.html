@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" type="image/x-icon" href="images/logoprepap.ico">
+    <link rel="icon" type="image/x-icon" href="images/icoprepa.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -83,7 +83,7 @@
     <div class="top-header">
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logoprepap.ico" alt="Logo"> Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
+          <img src="images/icoprepa.ico" alt="Logo"> Liceo Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
         </a>
         <a href="#" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
       </div>
@@ -126,118 +126,162 @@
       </div>
     </nav>
 <style>
-/* Cambiar color azul principal */
+/* Colores de fondo */
 .bg-primary {
-    background-color: #2257A6 !important; /* Azul dodger */
+    background-color: #2257A6 !important; /* Azul principal */
 }
-
-/* Cambiar el otro fondo oscuro */
 .bg-darken {
-    background-color: #FFD700!important; /* Azul más oscuro */
+    background-color: #FFD700 !important; /* Amarillo */
 }
 
 /* Sombra negra difuminada sobre todas las imágenes */
 .overlay {
-    background: rgba(0, 0, 0, 0.4) !important; /* Negro 40% de opacidad */
+    background: rgba(0, 0, 0, 0.4) !important; /* Negro 40% opacidad */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-</style>
 
-<section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(images/bg_1.png);">
-       	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Bienvenidos al Liceo Ambrosio Echavarría PREPARA</h1>
-            <p>Aquí formamos personas con valores, conocimientos y compromiso con su futuro.</p>
-          </div>
-        </div>
-        </div>
-      </div>
+/* Textos e íconos según el color del cuadro */
+.bg-primary .heading,
+.bg-primary p,
+.bg-primary .icon span {
+    color: #fff !important; /* Letras e íconos blancos en azul */
+}
 
-      <div class="slider-item" style="background-image:url(images/bg_2.png);">
-       	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-        </div>
-        </div>
-      </div>
-</section>
+.bg-darken .heading,
+.bg-darken p,
+.bg-darken .icon span {
+    color: #000 !important; /* Letras e íconos negros en amarillo */
+}
 
-<section class="ftco-services ftco-no-pb">
-	<div class="container-wrap">
-		<div class="row no-gutters">
-          <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-						<span class="flaticon-teacher"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Profesores Comprometidos</h3>
-                <p>Nuestro personal docente está enfocado en brindar una educación de calidad, con atención cercana a cada estudiante.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-						<span class="flaticon-reading"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Orientación y Apoyo Estudiantil</h3>
-                <p>Ofrecemos orientación académica y personal para ayudar a los estudiantes a superar sus retos y tomar buenas decisiones.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-						<span class="flaticon-books"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Ambiente de aprendizaje seguro</h3>
-                <p>Fomentamos el respeto, la disciplina y un ambiente donde todos puedan aprender tranquilos y sin distracciones.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-						<span class="flaticon-diploma"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Modalidad Sabatina</h3>
-                <p>El liceo ofrece una modalidad sabatina, ideal para quienes desean continuar sus estudios mientras cumplen otras responsabilidades.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-	</div>
-</section>
+/* Ajustes de tipografía */
+.ftco-services .heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.ftco-services p {
+    font-size: 1rem;
+}
 
-	
-	
-<style>
-  /* Sombreado de la sección ftco-counter cambiado al azul del logo */
-  .ftco-counter.img {
+/* Sombreado de la sección ftco-counter */
+.ftco-counter.img {
     position: relative;
-  }
-  .ftco-counter.img::before {
+}
+.ftco-counter.img::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(27, 19, 109, 0.5); /* Azul del logo con 50% de transparencia */
+    background: rgba(27, 19, 109, 0.5); /* Azul del logo con 50% transparencia */
     z-index: 0;
-  }
-  .ftco-counter.img .container {
+}
+.ftco-counter.img .container {
     position: relative;
     z-index: 1;
-  }
+}
 </style>
+
+<!-- Slider -->
+<section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image:url(images/bg_1.png); position: relative;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h1 class="mb-4" style="color: #fff;">Bienvenidos al Liceo Ambrosio Echavarría PREPARA</h1>
+                    <p style="color: #fff;">Aquí formamos personas con valores, conocimientos y compromiso con su futuro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(images/bg_2.png); position: relative;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h1 class="mb-4" style="color: #fff;">Nuestra misión educativa</h1>
+                    <p style="color: #fff;">Comprometidos con la formación integral de nuestros estudiantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(images/bg_3.png); position: relative;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h1 class="mb-4" style="color: #fff;">Un ambiente de aprendizaje seguro</h1>
+                    <p style="color: #fff;">Fomentamos el respeto y la disciplina para un aprendizaje tranquilo y efectivo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de servicios -->
+<section class="ftco-services ftco-no-pb">
+    <div class="container-wrap">
+        <div class="row no-gutters">
+
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-teacher"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Profesores Comprometidos</h3>
+                        <p>Nuestro personal docente está enfocado en brindar una educación de calidad, con atención cercana a cada estudiante.</p>
+                    </div>
+                </div>      
+            </div>
+
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-reading"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Orientación y Apoyo Estudiantil</h3>
+                        <p>Ofrecemos orientación académica y personal para ayudar a los estudiantes a superar sus retos y tomar buenas decisiones.</p>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-books"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Ambiente de aprendizaje seguro</h3>
+                        <p>Fomentamos el respeto, la disciplina y un ambiente donde todos puedan aprender tranquilos y sin distracciones.</p>
+                    </div>
+                </div>      
+            </div>
+
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-diploma"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Modalidad Sabatina</h3>
+                        <p>El liceo ofrece una modalidad sabatina, ideal para quienes desean continuar sus estudios mientras cumplen otras responsabilidades.</p>
+                    </div>
+                </div>      
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.png);">
   <div class="container">
@@ -327,19 +371,19 @@
 		</div>
 	</section>
      
-   <section style="background-color: rgb(27, 19, 109); padding: 80px 20px;">
+   <section style="background-color: #2257A6; padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 40px;">
 
-    <h2 style="text-align: center; font-size: 2.5rem; color: rgb(27, 19, 109); margin-bottom: 30px;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #2257A6; margin-bottom: 30px;">
       Preguntas Frecuentes
     </h2>
 
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
       <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Cuáles son los requisitos de admisión?
-        <span style="float: right; color: rgb(27, 19, 109);">+</span>
+        <span style="float: right; color:#2257A6;">+</span>
       </button>
-      <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
+      <div class="faq-answer" style="display: none; padding-top: 10px; color: #000000;">
         Debes presentar tu acta de nacimiento, boletín de notas y completar el formulario de inscripción.
       </div>
     </div>
@@ -347,9 +391,9 @@
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
       <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Cuál es el enfoque curricular de la escuela?
-        <span style="float: right; color: rgb(27, 19, 109);">+</span>
+        <span style="float: right; color: #2257A6;">+</span>
       </button>
-      <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
+      <div class="faq-answer" style="display: none; padding-top: 10px; color: #000000;">
         Nuestro currículo se centra en el desarrollo integral de los estudiantes, combinando lo académico con valores y habilidades prácticas.
       </div>
     </div>
@@ -357,9 +401,9 @@
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
       <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Existen programas para estudiantes talentosos?
-        <span style="float: right; color: rgb(27, 19, 109);">+</span>
+        <span style="float: right; color: #2257A6;">+</span>
       </button>
-      <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
+      <div class="faq-answer" style="display: none; padding-top: 10px; color: #000000;">
         Sí, contamos con programas especiales de apoyo y desarrollo para estudiantes con talentos destacados en diversas áreas.
       </div>
     </div>
@@ -367,7 +411,7 @@
     <div class="faq-item" style="border-bottom: 1px solid #e0e0e0; padding: 20px 0;">
       <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Qué actividades extracurriculares se ofrecen?
-        <span style="float: right; color: rgb(27, 19, 109);">+</span>
+        <span style="float: right; color:#2257A6;">+</span>
       </button>
       <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
         Ofrecemos deportes, arte, música, robótica, clubes de lectura y actividades comunitarias.
@@ -377,9 +421,9 @@
     <div class="faq-item" style="padding: 20px 0;">
       <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; font-size: 1.2rem; font-weight: 600; color: rgb(27, 19, 109); cursor: pointer;">
         ¿Qué medidas de seguridad existen en la escuela?
-        <span style="float: right; color: rgb(27, 19, 109);">+</span>
+        <span style="float: right; color: #2257A6;">+</span>
       </button>
-      <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
+      <div class="faq-answer" style="display: none; padding-top: 10px; color: #000000;">
         Contamos con vigilancia, control de acceso, simulacros de emergencia y personal capacitado en primeros auxilios.
       </div>
     </div>

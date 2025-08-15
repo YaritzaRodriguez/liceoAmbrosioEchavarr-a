@@ -1,87 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Liceo Ambrosio Echavarría</title>
+    <title>Liceo Ambrosio Echavarria</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
+    <link rel="icon" type="image/x-icon" href="images/icoprepa.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+     /* Barra azul a lo largo */
+      #ftco-navbar {
+        background-color: #0b0e2e !important;
+        width: 100%;
+      }
+      #ftco-navbar .container {
+        max-width: 1140px;
+      }
+
+      /* Encabezado superior */
+      .top-header {
+        background-color: white;
+        padding: 20px 0;
+      }
+      .top-header .navbar-brand {
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+      .top-header .navbar-brand img {
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      /* Forzar color azul del logo en utilidades y botones */
+      .btn-primary, .bg-primary, .bg-darken {
+        background-color: #2257A6 !important;
+        border-color: #2257A6  !important;
+        color: #fff !important;
+      }
+
+      /* Pie de página */
+      .ftco-footer {
+        background-color: #2257A6  !important;
+      }
+
+      /* Reglas para localizar y sobrescribir colores inline usados en el HTML original */
+      section[style*="#022e5d"],
+      footer[style*="#022e5d"] {
+        background-color: #2257A6  !important;
+      }
+
+      /* Ajustes FAQ */
+      .faq-question span {
+        color: #2257A6  !important;
+      }
+
+      /* Loader stroke */
+      .circular .path {
+        stroke: #2257A6 !important;
+      }
+
+    </style>
   </head>
   <body>
-	  <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="index.html">Ambrosio Echavarría<span>PREPARA</span></a>
-    			</div>
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+
+    <!-- Encabezado superior con logo y botón -->
+    <div class="top-header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icoprepa.ico" alt="Logo"> Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
+        </a>
+        <a href="#" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
+      </div>
     </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center px-4">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <form action="#" class="searchform order-lg-last">
+
+    <!-- Barra azul larga -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container d-flex align-items-center px-4">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <form action="#" class="searchform order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
+            <button type="submit" class="form-control search"><span class="ion-ios-search"></span></button>
           </div>
         </form>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	     <ul class="navbar-nav mr-auto">
-  <li class="nav-item"><a href="index.html" class="nav-link pl-0">Inicio</a></li>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link pl-0">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="historia.html">Historia</a>
+                <a class="dropdown-item" href="filosofia.html">Filosofía</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admisiones</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="admision.html">Proceso de Admisión</a>
+                <a class="dropdown-item" href="perfil.html">Perfil Del Alumno</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="Personal.html" class="nav-link">Gestión Administrativa</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Eventos</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<style>
+/* Cambiar color azul principal */
+.bg-primary {
+    background-color: #2257A6 !important; /* Azul dodger */
+}
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Sobre Nosotros
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="historia.html">Historia</a>
-      <a class="dropdown-item" href="filosofia.html">Filosofía</a>
-    </div>
-  </li>
+/* Cambiar el otro fondo oscuro */
+.bg-darken {
+    background-color: #FFD700!important; /* Azul más oscuro */
+}
 
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Admisiones
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="admision.html">Proceso de Admisión</a>
-      <a class="dropdown-item" href="perfil.html">Perfil Del Alumno</a>
-    </div>
-  </li>
-  <li class="nav-item"><a href="Personal.html" class="nav-link">Gestión Administrativa</a></li>
-  <li class="nav-item"><a href="blog.html" class="nav-link">Eventos</a></li>
-  <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-</ul>
-
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
-    <section class="hero-filosofia" style="position: relative; height: 400px; background: url('images/image.png') center center/cover no-repeat;">
-  <!-- Capa oscura para contraste -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(58, 57, 57, 0.55);">
-  </div>
+/* Sombra negra difuminada sobre todas las imágenes */
+.overlay {
+    background: rgba(0, 0, 0, 0.4) !important; /* Negro 40% de opacidad */
+}
+</style>
 
   
 </section>
@@ -134,7 +193,7 @@
     <!-- 4. Información institucional -->
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; flex-direction: row-reverse;">
       <div style="flex: 1 1 45%;">
-        <img src="imagenes/ana-felicia-pena.jpg" alt="Ana Felicia Peña" style="width: 100%; border-radius: 10px; object-fit: cover; aspect-ratio: 16 / 9;">
+        
       </div>
       <div style="flex: 1 1 50%;">
         <h2>Datos Institucionales</h2>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Fuente Poppins (igual que en el otro código) -->
+    <link rel="icon" type="image/x-icon" href="images/icoprepa.ico">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
@@ -28,8 +28,42 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="estilos.css" />
 
-    <!-- Ajustes visuales solicitados: Poppins, texto negro, párrafos justificados y espaciado -->
-    <style>
+        <style>
+     /* Barra azul a lo largo */
+      #ftco-navbar {
+        background-color: #0b0e2e !important;
+        width: 100%;
+      }
+      #ftco-navbar .container {
+        max-width: 1140px;
+      }
+
+      /* Encabezado superior */
+      .top-header {
+        background-color: white;
+        padding: 20px 0;
+      }
+      .top-header .navbar-brand {
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+      .top-header .navbar-brand img {
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      /* Forzar color azul del logo en utilidades y botones */
+      .btn-primary, .bg-primary, .bg-darken {
+        background-color: #2257A6 !important;
+        border-color: #2257A6  !important;
+        color: #fff !important;
+      }
+
+   
       /* Aplicar la misma tipografía a todo el sitio */
       body,
       button,
@@ -109,31 +143,15 @@
     </style>
   </head>
   <body>
-    <div class="bg-top navbar-light">
-      <div class="container">
-        <div class="row no-gutters d-flex align-items-center align-items-stretch">
-          <div class="col-md-4 d-flex align-items-center py-4">
-            <a class="navbar-brand" href="index.html"
-              >Ambrosio Echavarría<span>PREPARA</span></a
-            >
-          </div>
-          <div class="col-lg-8 d-block">
-            <div class="row d-flex">
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <!-- Espacio vacío intencional -->
-              </div>
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <!-- Espacio vacío intencional -->
-              </div>
-              <div class="col-md topper d-flex align-items-center justify-content-end">
-                <p class="mb-0">
-                  <a href="#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-                    <span>Aplica Aquí</span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
+     <!-- Encabezado superior con logo y botón -->
+    <div class="top-header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icoprepa.ico" alt="Logo"> Liceo Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
+        </a>
+        <a href="#" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
+      </div>
+    </div>
         </div>
       </div>
     </div>

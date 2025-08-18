@@ -21,13 +21,20 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 
         <style>
-     /* Barra azul a lo largo */
-      #ftco-navbar {
-        background-color: #0b0e2e !important;
-        width: 100%;
+      /* Barra azul a lo largo y todos sus elementos internos */
+      #ftco-navbar,
+      #ftco-navbar.ftco-navbar-light,
+      #ftco-navbar .container,
+      #ftco-navbar .navbar-nav,
+      #ftco-navbar .searchform {
+        background: #2257A6 !important;
+        background-image: none !important;
       }
       #ftco-navbar .container {
         max-width: 1140px;
@@ -56,6 +63,29 @@
         background-color: #2257A6 !important;
         border-color: #2257A6  !important;
         color: #fff !important;
+      }
+      /* Menú principal al pasar el mouse */
+      #ftco-navbar .navbar-nav .nav-link:hover,
+      #ftco-navbar .navbar-nav .nav-item.active .nav-link {
+        background-color: #FFD700; /* Amarillo */
+        color: #000 !important;
+        border-radius: 3px;
+      }
+
+      /* Fondo del submenú (antes blanco) */
+      #ftco-navbar .dropdown-menu {
+        background-color: #2257A6; /* azul barra */
+        border: none;
+      }
+
+      /* Submenú al pasar el mouse */
+      #ftco-navbar .dropdown-menu .dropdown-item {
+        color: #fff; /* texto blanco normal */
+      }
+
+      #ftco-navbar .dropdown-menu .dropdown-item:hover {
+        background-color: #FFD700; /* Amarillo */
+        color: #000 !important;
       }
       </style>
   </head>
@@ -208,7 +238,7 @@
       margin-bottom: 50px;
     ">
       <h2 style="color: #022e5d; font-weight: 700; text-align: center; margin-bottom: 30px;"></h2>
-      <p style="text-align:center; color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto 40px auto;">
+      <p style="text-align:center; color: #000000; font-size: 1.1rem; max-width: 600px; margin: 0 auto 40px auto;">
         Estamos para ayudarte. Encuentra toda la información para comunicarte con nosotros.
       </p>
 
@@ -217,21 +247,21 @@
           <div>
             <span style="font-size: 36px; color: #007bff;">📍</span>
             <h5 style="color: #022e5d; margin-top: 10px;">Dirección</h5>
-            <p>Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</p>
+            <p style="color: black;">Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</p>
           </div>
         </div>
         <div class="col-md-3 col-6 mb-4">
           <div>
             <span style="font-size: 36px; color: #dc3545;">📧</span>
             <h5 style="color: #022e5d; margin-top: 10px;">Correo Electrónico</h5>
-            <p><a href="mailto:liceoambrosioechavarria@gmail.com" style="color: inherit; text-decoration: none;">liceoambrosioechavarria@gmail.com</a></p>
+            <p style="color: black;"><a href="mailto:liceoambrosioechavarria@gmail.com" style="color: inherit; text-decoration: none;">liceoambrosioechavarria@gmail.com</a></p>
           </div>
         </div>
         <div class="col-md-3 col-6 mb-4">
           <div>
             <span style="font-size: 36px; color: #28a745;">📞</span>
             <h5 style="color: #022e5d; margin-top: 10px;">Teléfono</h5>
-            <p><a href="tel:+18297811049" style="color: inherit; text-decoration: none;">+1 829 781 1049</a></p>
+            <p style="color: black;"><a href="tel:+18297811049" style="color: inherit; text-decoration: none;">+1 829 781 1049</a></p>
           </div>
         </div>
   
@@ -239,113 +269,130 @@
           <div>
             <span style="font-size: 36px; color: #ffc107;">⏰</span>
             <h5 style="color: #022e5d; margin-top: 10px;">Horario</h5>
-            <p> Sabádo: 8:00 am - 4:00 pm</p>
+            <p style="color: black;"> Sabádo: 8:00 am - 4:00 pm</p>
           </div>
         </div>
       </div>
 
-      <!-- Redes Sociales centradas -->
-      <div style="text-align:center; margin-top: 30px;">
-        <h5 style="color: #022e5d; margin-bottom: 15px;">Síguenos en redes sociales</h5>
-        <a href="#" style="
-          display: inline-block; 
-          background-color: #3b5998; 
-          color: white; 
-          border-radius: 50%; 
-          width: 40px; 
-          height: 40px; 
-          line-height: 40px; 
-          margin: 0 10px; 
-          font-size: 20px;
-          text-decoration: none;">
-          
-        </a>
-        <a href="#" style="
-          display: inline-block; 
-          background-color: #E4405F; 
-          color: white; 
-          border-radius: 50%; 
-          width: 40px; 
-          height: 40px; 
-          line-height: 40px; 
-          margin: 0 10px; 
-          font-size: 20px;
-          text-decoration: none;">
-          
-        </a>
-        <a href="#" style="
-          display: inline-block; 
-          background-color: #1DA1F2; 
-          color: white; 
-          border-radius: 50%; 
-          width: 40px; 
-          height: 40px; 
-          line-height: 40px; 
-          margin: 0 10px; 
-          font-size: 20px;
-          text-decoration: none;">
-          
-        </a>
-      </div>
-    </div>
-
-    <!-- Mapa y formulario lado a lado -->
-<div class="row" style="gap: 30px;">
-  <!-- Mapa con borde redondeado y sombra -->
-  <div class="col-md-6" style="
-    border-radius: 15px; 
-    overflow: hidden; 
-    box-shadow: 0 0 25px rgba(2, 46, 93, 0.25);
-    min-height: 400px;
-  ">
-    <iframe 
-      src="https://maps.google.com/maps?q=Calle%20Camilo%20Rodr%C3%ADguez,%20Laguna%20Salada,%20Valverde,%20R.D.&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-      width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
-
-  <!-- Formulario con fondo azul claro y borde redondeado -->
-  <div class="col-md-6" style="
-    background: #e9f2fc; 
-    padding: 40px; 
-    border-radius: 15px; 
-    box-shadow: 0 0 25px rgba(2, 46, 93, 0.15);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  ">
-    <h2 style="color: #022e5d; margin-bottom: 25px; font-weight: 700;">Envíanos un mensaje</h2>
-    <form action="#" class="contact-form">
-      <div class="form-group mb-4">
-        <input type="text" class="form-control" placeholder="Tu nombre" required style="border-radius: 8px; border: 1px solid #ccc; padding: 10px;">
-      </div>
-      <div class="form-group mb-4">
-        <input type="email" class="form-control" placeholder="Tu correo electrónico" required style="border-radius: 8px; border: 1px solid #ccc; padding: 10px;">
-      </div>
-      <div class="form-group mb-4">
-        <input type="text" class="form-control" placeholder="Asunto" required style="border-radius: 8px; border: 1px solid #ccc; padding: 10px;">
-      </div>
-      <div class="form-group mb-4">
-        <textarea class="form-control" rows="5" placeholder="Mensaje" required style="border-radius: 8px; border: 1px solid #ccc; padding: 10px;"></textarea>
-      </div>
-      <div class="form-group text-center">
-        <button type="submit" style="
-          background-color: #022e5d; 
-          color: white; 
-          border: none; 
-          padding: 12px 40px; 
-          font-size: 1.1rem; 
-          border-radius: 30px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        "
-        onmouseover="this.style.backgroundColor='#011f3d'" 
-        onmouseout="this.style.backgroundColor='#022e5d'">
-          Enviar
-        </button>
-      </div>
-    </form>
+     <div class="social-section">
+  <h4>Síguenos en redes sociales</h4>
+  <div class="social-icons">
+    <a href="https://web.facebook.com/profile.php?id=100084296012070" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/ambrosioehavarriaprepara/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
   </div>
 </div>
+
+<style>
+.social-section {
+  text-align: center;
+  margin: 30px 0; /* espacio arriba y abajo */
+}
+
+.social-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espacio entre iconos */
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white; /* iconos blancos dentro */
+  transition: 0.3s;
+}
+
+/* Facebook azul */
+.social-icons a.facebook {
+  background: #1877f2;
+}
+.social-icons a.facebook:hover {
+  background: #0d5abf;
+}
+
+/* Instagram degradado */
+.social-icons a.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.social-icons a.instagram:hover {
+  filter: brightness(1.1);
+}
+</style>
+
+
+
+ <!-- Mapa y formulario lado a lado -->
+<div class="row">
+  <!-- Mapa con borde redondeado y sombra -->
+  <div class="col-md-6 mb-4">
+    <div style="
+      border-radius: 15px; 
+      overflow: hidden; 
+      box-shadow: 0 0 25px rgba(2, 46, 93, 0.25);
+      min-height: 400px;
+    ">
+      <iframe 
+        src="https://maps.google.com/maps?q=Calle%20Camilo%20Rodr%C3%ADguez,%20Laguna%20Salada,%20Valverde,%20R.D.&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Formulario con fondo azul claro -->
+  <div class="col-md-6 mb-4">
+    <div style="
+      background: #e9f2fc; 
+      padding: 40px; 
+      border-radius: 15px; 
+      box-shadow: 0 0 25px rgba(2, 46, 93, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    ">
+      <h2 style="color: #022e5d; margin-bottom: 25px; font-weight: 700;">Envíanos un mensaje</h2>
+      <form action="#" class="contact-form">
+        <div class="form-group mb-4">
+          <input type="text" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group mb-4">
+          <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="form-group mb-4">
+          <input type="text" class="form-control" placeholder="Asunto" required>
+        </div>
+        <div class="form-group mb-4">
+          <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" style="
+            background-color: #022e5d; 
+            color: white; 
+            border: none; 
+            padding: 12px 40px; 
+            font-size: 1.1rem; 
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          "
+          onmouseover="this.style.backgroundColor='#011f3d'" 
+          onmouseout="this.style.backgroundColor='#022e5d'">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 </section>
 
@@ -353,78 +400,88 @@
 
 		
         		
-    <footer class="ftco-footer" style="background-color: #022e5d;">
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Ambrosio Echavarría PREPARA</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon icon-map-marker" style="color: #fff;"></span><span class="text" style="color: #fff;">Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</span></li>
-                            <li><a href="#" style="color: #fff;"><span class="icon icon-phone" style="color: #fff;"></span><span class="text" style="color: #fff;">+1 829 781 1049</span></a></li>
-                            <li><a href="#" style="color: #fff;"><span class="icon icon-envelope" style="color: #fff;"></span><span class="text" style="color: #fff;">liceoambrosioechavarria@gmail.com</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Destacados</h2>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading" style="color: #fff;"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta" style="color: #fff;">
-                                <div><a href="#" style="color: #fff;"><span class="icon-calendar" style="color: #fff;"></span> June 27, 2019</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-person" style="color: #fff;"></span> Admin</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-chat" style="color: #fff;"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-5 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading" style="color: #fff;"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta" style="color: #fff;">
-                                <div><a href="#" style="color: #fff;"><span class="icon-calendar" style="color: #fff;"></span> June 27, 2019</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-person" style="color: #fff;"></span> Admin</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-chat" style="color: #fff;"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Navegación</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Inicio</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Sobre Nosotros</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Admisiones</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Gestión Administrativa</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2 mb-0" style="color: #fff;">Síguenos</h2>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                        <li class="ftco-animate"><a href="#" style="color: #fff;"><span class="icon-facebook" style="color: #fff;"></span></a></li>
-                        <li class="ftco-animate"><a href="#" style="color: #fff;"><span class="icon-instagram" style="color: #fff;"></span></a></li>
-                    </ul>
-                </div>
-            </div>
+   	
+		
+		<footer class="ftco-footer" style="background-color: #2257A6; color: white; padding: 30px 20px; font-size: 15px;">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Ambrosio Echavarría PREPARA</h2>
+          <div class="block-23 mb-3">
+            <ul style="padding-left: 0; list-style: none; font-size: 14px;">
+              <li><span class="icon icon-map-marker" style="color: #fff;"></span> Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</li>
+              <li><a href="#" style="color: #fff;"><span class="icon icon-phone"></span> +1 829 781 1049</a></li>
+              <li><a href="#" style="color: #fff;"><span class="icon icon-envelope"></span> liceoambrosioechavarria@gmail.com</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p style="color: #fff;">&copy;<script>document.write(new Date().getFullYear());</script>  <i class="icon-heart" aria-hidden="true" style="color: #fff;"></i> por <a href="https://colorlib.com" target="_blank" style="color: #fff;"></a></p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Destacados</h2>
+          <div class="block-21 mb-3 d-flex">
+            <a class="blog-img mr-3" style="background-image: url(images/image_3.jpg); width: 70px; height: 70px;"></a>
+            <div class="text" style="font-size: 14px;">
+              <h3 class="heading" style="margin:0;"><a href="admision.html" style="color: #fff;">Proceso De Admisión</a></h3>
+              <div class="meta" style="color: #fff; font-size: 13px;">
+                <div><a href="#" style="color: #fff;"><span class="icon-calendar"></span> Agosto 09, 2025</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-chat"></span> 19</a></div>
+              </div>
             </div>
+          </div>
+
+          <div class="block-21 mb-3 d-flex">
+            <a class="blog-img mr-3" style="background-image: url(images/image_2.jpg); width: 70px; height: 70px;"></a>
+            <div class="text" style="font-size: 14px;">
+              <h3 class="heading" style="margin:0;"><a href="evento2.html" style="color: #fff;">Inicio del Año Escolar</a></h3>
+              <div class="meta" style="color: #fff; font-size: 13px;">
+                <div><a href="#" style="color: #fff;"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4 ml-md-2">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Navegación</h2>
+          <ul class="list-unstyled" style="font-size: 14px; padding-left: 0;">
+            <li><a href="index.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Inicio</a></li>
+            <li><a href="historia.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Sobre Nosotros</a></li>
+            <li><a href="admision.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Admisiones</a></li>
+            <li><a href="Personal.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Gestión Administrativa</a></li>
+            <li><a href="contact.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 mb-2" style="color: #fff; font-size: 20px;">Síguenos</h2>
+          <ul class="ftco-footer-social list-unstyled d-flex" style="padding-left:0; gap:10px; font-size: 18px;">
+            <li><a href="https://web.facebook.com/profile.php?id=100084296012070" target="_blank" style="color: #fff;"><span class="icon-facebook"></span></a></li>
+            <li><a href="https://www.instagram.com/ambrosioehavarriaprepara/" target="_blank" style="color: #fff;"><span class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 20px 0;">
+
+    <p style="text-align: center; font-size: 14px; margin: 0;">
+      &copy; 2025 Liceo Ambrosio Echavarría. Todos los derechos reservados.<br>
+      <a href="https://www.privacypolicies.com/live/d383c4f2-8c41-4be7-82da-ace8a8fc4bc1" target="_blank" style="color: yellow; text-decoration: none;">Política de Privacidad</a>
+    </p>
+  </div>
 </footer>
 
+
+  
     
     
   

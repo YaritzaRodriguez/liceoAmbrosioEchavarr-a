@@ -20,11 +20,86 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-     /* Barra azul a lo largo */
+ 
+  /* Ajustes Responsive */
+
+  /* Top header: logo + botón */
+  @media (max-width: 768px) {
+    .top-header .container {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .top-header .navbar-brand {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .top-header .btn {
+      width: 100%;
+    }
+  }
+
+  /* Slider texto ocupa todo en móviles */
+  @media (max-width: 768px) {
+    .slider-item .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    .slider-item h1 {
+      font-size: 1.8rem;
+    }
+    .slider-item p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Galería adaptable */
+  @media (max-width: 992px) {
+    .galeria-fotos div[style*="flex: 1 1 calc(33.333%"] {
+      flex: 1 1 calc(50% - 20px) !important;
+      max-width: calc(50% - 20px) !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .galeria-fotos div[style*="flex: 1 1 calc(33.333%"] {
+      flex: 1 1 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  /* FAQ más cómodo en móviles */
+  @media (max-width: 768px) {
+    section[style*="padding: 80px"] {
+      padding: 40px 15px !important;
+    }
+    section[style*="padding: 80px"] h2 {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  /* Footer columnas separadas */
+  @media (max-width: 768px) {
+    .ftco-footer .col-md-6,
+    .ftco-footer .col-lg-3 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+      /* Barra azul a lo largo y todos sus elementos internos */
+      #ftco-navbar,
+      #ftco-navbar.ftco-navbar-light,
+      #ftco-navbar .container,
+      #ftco-navbar .navbar-nav,
+      #ftco-navbar .searchform {
+        background: #2257A6 !important;
+        background-image: none !important;
+      }
+
       #ftco-navbar {
-        background-color: #0b0e2e !important;
         width: 100%;
       }
+
       #ftco-navbar .container {
         max-width: 1140px;
       }
@@ -75,6 +150,33 @@
         stroke: #2257A6 !important;
       }
 
+      /* ============================= */
+      /* EFECTOS DE HOVER EN EL MENÚ   */
+      /* ============================= */
+
+      /* Menú principal al pasar el mouse */
+      #ftco-navbar .navbar-nav .nav-link:hover,
+      #ftco-navbar .navbar-nav .nav-item.active .nav-link {
+        background-color: #FFD700; /* Amarillo */
+        color: #000 !important;
+        border-radius: 3px;
+      }
+
+      /* Fondo del submenú (antes blanco) */
+      #ftco-navbar .dropdown-menu {
+        background-color: #2257A6; /* azul barra */
+        border: none;
+      }
+
+      /* Submenú al pasar el mouse */
+      #ftco-navbar .dropdown-menu .dropdown-item {
+        color: #fff; /* texto blanco normal */
+      }
+
+      #ftco-navbar .dropdown-menu .dropdown-item:hover {
+        background-color: #FFD700; /* Amarillo */
+        color: #000 !important;
+      }
     </style>
   </head>
   <body>
@@ -85,7 +187,7 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/icoprepa.ico" alt="Logo"> Liceo Ambrosio Echavarría <span style="font-size:14px; margin-left:5px;"></span>
         </a>
-        <a href="#" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGi8zfaig5HNr5gdfdVdUTqS0cYswoz1iUUiIHTiiFMDXrCQ/viewform?usp=header" class="btn btn-primary" style="background-color: #2257A6 ; border: none;">Aplica Aquí</a>
       </div>
     </div>
 
@@ -105,15 +207,15 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a href="index.html" class="nav-link pl-0">Inicio</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 <a class="dropdown-item" href="historia.html">Historia</a>
                 <a class="dropdown-item" href="filosofia.html">Filosofía</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admisiones</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admisiones</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                 <a class="dropdown-item" href="admision.html">Proceso de Admisión</a>
                 <a class="dropdown-item" href="perfil.html">Perfil Del Alumno</a>
               </div>
@@ -125,6 +227,8 @@
         </div>
       </div>
     </nav>
+  
+
 <style>
 /* Colores de fondo */
 .bg-primary {
@@ -321,7 +425,7 @@
               </a>
               <div class="text bg-white p-4">
                 <h3 class="heading"><a href="#">Canlendario Escolar</a></h3>
-                <p>Conoce las fechas importantes del centro educativo</p>
+                <p style="color: black;">Conoce las fechas importantes del centro educativo</p>
                 <div class="d-flex align-items-center mt-4">
               <a href="calendario.html" class="btn btn-sm btn-primary rounded-pill px-3">Leer Más</a>
 				        <p class="ml-auto mb-0">
@@ -339,7 +443,7 @@
               </a>
               <div class="text bg-white p-4">
                 <h3 class="heading"><a href="#">Proceso De Admisión</a></h3>
-                <p>Conoce todos los requisitos necesarios para inscribirte en el liceo Ambrosio Echavarría PREPARA</p>
+                <p style="color: black;">Conoce todos los requisitos necesarios para inscribirte en el Liceo Ambrosio Echavarría PREPARA</p>
                 <div class="d-flex align-items-center mt-4">
               <a href="evento5.html" class="btn btn-sm btn-primary rounded-pill px-3">Leer Más</a>
 				        <p class="ml-auto mb-0">
@@ -357,7 +461,7 @@
               </a>
               <div class="text bg-white p-4">
                 <h3 class="heading"><a href="#">Nuevo Año Escolar</a></h3>
-                <p>Descrube todos las actividades</p>
+                <p style="color: black;">Descubre todas las actividades</p>
                 <div class="d-flex align-items-center mt-4">
 				        <p class="mb-0"><a href="#" class="btn btn-primary">Leer Más <span class="ion-ios-arrow-round-forward"></span></a></p>
 				        <p class="ml-auto mb-0">
@@ -413,7 +517,7 @@
         ¿Qué actividades extracurriculares se ofrecen?
         <span style="float: right; color:#2257A6;">+</span>
       </button>
-      <div class="faq-answer" style="display: none; padding-top: 10px; color: #555;">
+      <div class="faq-answer" style="display: none; padding-top: 10px; color: #000000;">
         Ofrecemos deportes, arte, música, robótica, clubes de lectura y actividades comunitarias.
       </div>
     </div>
@@ -517,84 +621,88 @@
 
 		
 		
-		
-		<footer class="ftco-footer" style="background-color: rgb(27, 19, 109);">
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Ambrosio Echavarría PREPARA</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon icon-map-marker" style="color: #fff;"></span><span class="text" style="color: #fff;">Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</span></li>
-                            <li><a href="#" style="color: #fff;"><span class="icon icon-phone" style="color: #fff;"></span><span class="text" style="color: #fff;">+1 829 781 1049</span></a></li>
-                            <li><a href="#" style="color: #fff;"><span class="icon icon-envelope" style="color: #fff;"></span><span class="text" style="color: #fff;">liceoambrosioechavarria@gmail.com</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Destacados</h2>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading" style="color: #fff;"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta" style="color: #fff;">
-                                <div><a href="#" style="color: #fff;"><span class="icon-calendar" style="color: #fff;"></span> June 27, 2019</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-person" style="color: #fff;"></span> Admin</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-chat" style="color: #fff;"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-5 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading" style="color: #fff;"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta" style="color: #fff;">
-                                <div><a href="#" style="color: #fff;"><span class="icon-calendar" style="color: #fff;"></span> June 27, 2019</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-person" style="color: #fff;"></span> Admin</a></div>
-                                <div><a href="#" style="color: #fff;"><span class="icon-chat" style="color: #fff;"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2" style="color: #fff;">Navegación</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Inicio</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Sobre Nosotros</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Admisiones</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Gestión Administrativa</a></li>
-                        <li><a href="#" style="color: #fff;"><span class="ion-ios-arrow-round-forward mr-2" style="color: #fff;"></span>Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2 mb-0" style="color: #fff;">Síguenos</h2>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                        <li class="ftco-animate"><a href="#" style="color: #fff;"><span class="icon-facebook" style="color: #fff;"></span></a></li>
-                        <li class="ftco-animate"><a href="#" style="color: #fff;"><span class="icon-instagram" style="color: #fff;"></span></a></li>
-                    </ul>
-                </div>
-            </div>
+		<footer class="ftco-footer" style="background-color: #2257A6; color: white; padding: 30px 20px; font-size: 15px;">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Ambrosio Echavarría PREPARA</h2>
+          <div class="block-23 mb-3">
+            <ul style="padding-left: 0; list-style: none; font-size: 14px;">
+              <li><span class="icon icon-map-marker" style="color: #fff;"></span> Calle Camilo Rodríguez, Laguna Salada, Valverde, R.D.</li>
+              <li><a href="#" style="color: #fff;"><span class="icon icon-phone"></span> +1 829 781 1049</a></li>
+              <li><a href="#" style="color: #fff;"><span class="icon icon-envelope"></span> liceoambrosioechavarria@gmail.com</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p style="color: #fff;">&copy;<script>document.write(new Date().getFullYear());</script>  <i class="icon-heart" aria-hidden="true" style="color: #fff;"></i> por <a href="https://colorlib.com" target="_blank" style="color: #fff;"></a></p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Destacados</h2>
+          <div class="block-21 mb-3 d-flex">
+            <a class="blog-img mr-3" style="background-image: url(images/image_3.jpg); width: 70px; height: 70px;"></a>
+            <div class="text" style="font-size: 14px;">
+              <h3 class="heading" style="margin:0;"><a href="admision.html" style="color: #fff;">Proceso De Admisión</a></h3>
+              <div class="meta" style="color: #fff; font-size: 13px;">
+                <div><a href="#" style="color: #fff;"><span class="icon-calendar"></span> Agosto 09, 2025</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-chat"></span> 19</a></div>
+              </div>
             </div>
+          </div>
+
+          <div class="block-21 mb-3 d-flex">
+            <a class="blog-img mr-3" style="background-image: url(images/image_2.jpg); width: 70px; height: 70px;"></a>
+            <div class="text" style="font-size: 14px;">
+              <h3 class="heading" style="margin:0;"><a href="evento2.html" style="color: #fff;">Inicio del Año Escolar</a></h3>
+              <div class="meta" style="color: #fff; font-size: 13px;">
+                <div><a href="#" style="color: #fff;"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#" style="color: #fff;"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4 ml-md-2">
+          <h2 class="ftco-heading-2" style="color: #fff; font-size: 20px;">Navegación</h2>
+          <ul class="list-unstyled" style="font-size: 14px; padding-left: 0;">
+            <li><a href="index.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Inicio</a></li>
+            <li><a href="historia.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Sobre Nosotros</a></li>
+            <li><a href="admision.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Admisiones</a></li>
+            <li><a href="Personal.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Gestión Administrativa</a></li>
+            <li><a href="contact.html" style="color: #fff;"><span class="ion-ios-arrow-round-forward"></span> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 mb-2" style="color: #fff; font-size: 20px;">Síguenos</h2>
+          <ul class="ftco-footer-social list-unstyled d-flex" style="padding-left:0; gap:10px; font-size: 18px;">
+            <li><a href="https://web.facebook.com/profile.php?id=100084296012070" target="_blank" style="color: #fff;"><span class="icon-facebook"></span></a></li>
+            <li><a href="https://www.instagram.com/ambrosioehavarriaprepara/" target="_blank" style="color: #fff;"><span class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 20px 0;">
+
+    <p style="text-align: center; font-size: 14px; margin: 0;">
+      &copy; 2025 Liceo Ambrosio Echavarría. Todos los derechos reservados.<br>
+      <a href="https://www.privacypolicies.com/live/d383c4f2-8c41-4be7-82da-ace8a8fc4bc1" target="_blank" style="color: yellow; text-decoration: none;">Política de Privacidad</a>
+    </p>
+  </div>
 </footer>
+
 
     
   
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="rgb(27, 19, 109)"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>

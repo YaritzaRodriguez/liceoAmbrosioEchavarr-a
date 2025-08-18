@@ -23,6 +23,69 @@
     <link rel="stylesheet" href="css/style.css">
 
         <style>
+          /* Ajustes Responsive */
+
+  /* Top header: logo + botón */
+  @media (max-width: 768px) {
+    .top-header .container {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .top-header .navbar-brand {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .top-header .btn {
+      width: 100%;
+    }
+  }
+
+  /* Slider texto ocupa todo en móviles */
+  @media (max-width: 768px) {
+    .slider-item .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    .slider-item h1 {
+      font-size: 1.8rem;
+    }
+    .slider-item p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Galería adaptable */
+  @media (max-width: 992px) {
+    .galeria-fotos div[style*="flex: 1 1 calc(33.333%"] {
+      flex: 1 1 calc(50% - 20px) !important;
+      max-width: calc(50% - 20px) !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .galeria-fotos div[style*="flex: 1 1 calc(33.333%"] {
+      flex: 1 1 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  /* FAQ más cómodo en móviles */
+  @media (max-width: 768px) {
+    section[style*="padding: 80px"] {
+      padding: 40px 15px !important;
+    }
+    section[style*="padding: 80px"] h2 {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  /* Footer columnas separadas */
+  @media (max-width: 768px) {
+    .ftco-footer .col-md-6,
+    .ftco-footer .col-lg-3 {
+      margin-bottom: 20px;
+    }
+  }
     /* Barra azul a lo largo y todos sus elementos internos */
       #ftco-navbar,
       #ftco-navbar.ftco-navbar-light,

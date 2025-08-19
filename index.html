@@ -20,6 +20,45 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+      /* Ajustar imágenes para que nunca se desborden en móviles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Texto más legible en pantallas pequeñas */
+body {
+  font-size: 16px;  /* tamaño base */
+  line-height: 1.5;
+}
+
+/* Mejorar títulos en móvil */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Ajustar secciones con mucho padding en PC para que no se vean apretadas en móvil */
+@media (max-width: 768px) {
+  .container, .content, section {
+    padding: 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  /* Si usas columnas tipo bootstrap */
+  .row > [class*="col-"] {
+    margin-bottom: 20px;
+  }
+}
+
  
   /* Ajustes Responsive */
 

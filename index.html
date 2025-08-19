@@ -20,6 +20,53 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+      @media (max-width: 768px) {
+  .galeria-fotos div {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+      /* Ajustes generales para móviles */
+@media (max-width: 768px) {
+  /* Cabecera */
+  .top-header .navbar-brand {
+    font-size: 22px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .top-header .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Slider */
+  .slider-item h1 {
+    font-size: 1.5rem !important;
+  }
+  .slider-item p {
+    font-size: 0.95rem !important;
+  }
+
+  /* Servicios */
+  .ftco-services .heading {
+    font-size: 1.2rem !important;
+  }
+  .ftco-services p {
+    font-size: 0.9rem !important;
+  }
+
+  /* FAQ */
+  #mini-doc h2, .faq-item h2 {
+    font-size: 1.6rem !important;
+  }
+
+  /* Footer */
+  .ftco-footer .col-md-6, .ftco-footer .col-lg-3 {
+    margin-bottom: 15px;
+  }
+}
+
       /* Ajustar imágenes para que nunca se desborden en móviles */
 img {
   max-width: 100%;
@@ -331,7 +378,7 @@ h1, h2, h3, h4 {
 
 <!-- Slider -->
 <section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image:url(images/bg_1.png); position: relative;">
+    <div class="slider-item" style="background-image:url(images/bg_3.png); position: relative;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -343,26 +390,24 @@ h1, h2, h3, h4 {
         </div>
     </div>
 
-    <div class="slider-item" style="background-image:url(images/bg_2.png); position: relative;">
+    <div class="slider-item" style="background-image:url(images/bg_1.png); position: relative;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
                 <div class="col-md-6 ftco-animate">
-                    <h1 class="mb-4" style="color: #fff;">Nuestra misión educativa</h1>
-                    <p style="color: #fff;">Comprometidos con la formación integral de nuestros estudiantes.</p>
+                    <h1 class="mb-4" style="color: #fff;">Somos un Centro</h1>
+                    <p style="color: #fff;">Comprometido con la formación integral de nuestros estudiantes.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="slider-item" style="background-image:url(images/bg_3.png); position: relative;">
+    <div class="slider-item" style="background-image:url(images/bg_2.png); position: relative;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
                 <div class="col-md-6 ftco-animate">
-                    <h1 class="mb-4" style="color: #fff;">Un ambiente de aprendizaje seguro</h1>
-                    <p style="color: #fff;">Fomentamos el respeto y la disciplina para un aprendizaje tranquilo y efectivo.</p>
-                </div>
+                    
             </div>
         </div>
     </div>
@@ -442,13 +487,14 @@ h1, h2, h3, h4 {
       <div class="col-md-10">
         <div class="video-box shadow-lg">
           <div class="video-container">
-           <iframe src="https://youtu.be/iw5fdSiipho?si=NW_OqYhBno3NGjPP"
-  title="Mini-documental Liceo Ambrosio Echavarría"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
+            <iframe 
+              src="https://www.youtube.com/embed/iw5fdSiipho?si=rh7JI1dZIIIKGotp" 
+              title="Mini-documental Liceo Ambrosio Echavarría"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
@@ -458,24 +504,24 @@ h1, h2, h3, h4 {
 
 <!-- ===== CSS ===== -->
 <style>
-/* Fondo degradado azul - blanco - amarillo */
+/* Fondo degradado suave */
 #mini-doc {
   padding: 80px 0;
-  background: linear-gradient(135deg, #eef0f2, #504af3, #e0d699);
+  background: linear-gradient(135deg, #f0f4ff, #e8eaf6);
 }
 
-/* Caja blanca con sombra */
+/* Caja blanca elegante */
 .video-box {
   background: #fff;
   border-radius: 20px;
-  padding: 20px;
-  border: 3px solid #004aad;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* Contenedor responsivo para el video */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; /* relación 16:9 */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -490,17 +536,18 @@ h1, h2, h3, h4 {
   border-radius: 12px;
 }
 
-/* Texto */
+/* Títulos */
 #mini-doc h2 {
   font-weight: 700;
-  color: #004aad;
+  color: #2a2a72;
 }
 
 #mini-doc p.lead {
   font-size: 1.2rem;
-  color: #333;
+  color: #444;
 }
 </style>
+
 
 
 
